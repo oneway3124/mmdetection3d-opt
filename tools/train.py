@@ -1,4 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+# .\configs\second\hv_second_secfpn_6x8_80e_kitti-3d-car.py --work-dir .\output\second
+# .\configs\pointpillars\hv_pointpillars_secfpn_6x8_160e_minikitti-3d-3class_custom.py --work-dir .\output\pointpillars
 from __future__ import division
 import argparse
 import copy

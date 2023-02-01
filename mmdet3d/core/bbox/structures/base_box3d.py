@@ -324,7 +324,12 @@ class BaseInstance3DBoxes(object):
                 self.tensor[item].view(1, -1),
                 box_dim=self.box_dim,
                 with_yaw=self.with_yaw)
-        b = self.tensor[item]
+	    """tensor and tuple issue 20230131"""			
+		if isinstance(item, tuple):
+            b = self.tensor[item[0].to(self.tensor.device)]
+        else:
+            b = self.tensor[item]
+        """end"""
         assert b.dim() == 2, \
             f'Indexing on Boxes with {item} failed to return a matrix!'
         return original_type(b, box_dim=self.box_dim, with_yaw=self.with_yaw)
