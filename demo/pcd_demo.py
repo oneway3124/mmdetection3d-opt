@@ -1,4 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+##demo\data\kitti\000999.bin configs\second\hv_second_secfpn_6x8_80e_kitti-3d-car.py output\second\latest.pth --show
+##demo\data\kitti\000999.bin configs\pointpillars\hv_pointpillars_secfpn_6x8_160e_minikitti-3d-3class_custom.py output\pointpillars\latest.pth --show
 from argparse import ArgumentParser
 
 from mmdet3d.apis import inference_detector, init_model, show_result_meshlab

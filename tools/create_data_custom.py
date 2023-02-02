@@ -113,13 +113,15 @@ def main():
     parser.add_argument(
         '--root-path',
         type=str,
-        default='./toy_kitti',
+        # default='./toy_kitti',
+        default='../data/minikitti_sustech',
         help='specify the root path of dataset')
 
     parser.add_argument(
         '--out-dir',
         type=str,
-        default='./toy_kitti',
+        # default='./toy_kitti',
+        default='../data/minikitti_sustech',
         required=False,
         help='name of info pkl')
 
