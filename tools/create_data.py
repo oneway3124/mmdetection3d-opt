@@ -1,3 +1,4 @@
+# python tools/create_data.py kitti --root-path ./data/kitti --out-dir ./data/kitti --extra-tag kitti
 # Copyright (c) OpenMMLab. All rights reserved.
 import argparse
 from os import path as osp
